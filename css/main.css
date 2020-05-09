@@ -176,6 +176,10 @@ html[dir=rtl] .serach-form.open {
     display: none;
     transition: none;
   }
+  html[dir=rtl] .serach-form {
+    left: 0;
+    right: 0;
+  }
   .serach-form.open {
     visibility: unset;
     opacity: unset;
