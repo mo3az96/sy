@@ -102,7 +102,7 @@ $(document).ready(function () {
             1200: {
                 slidesPerView: 3,
             },
-            1550: {
+            1500: {
                 slidesPerView: 4,
             }
         },
@@ -131,7 +131,7 @@ $(document).ready(function () {
             1200: {
                 slidesPerView: 3,
             },
-            1550: {
+            1500: {
                 slidesPerView: 4,
             }
         },
@@ -160,7 +160,7 @@ $(document).ready(function () {
             1200: {
                 slidesPerView: 3,
             },
-            1550: {
+            1500: {
                 slidesPerView: 4,
             }
         },
@@ -189,7 +189,7 @@ $(document).ready(function () {
             1200: {
                 slidesPerView: 3,
             },
-            1550: {
+            1500: {
                 slidesPerView: 4,
             }
         },
@@ -218,7 +218,7 @@ $(document).ready(function () {
             1200: {
                 slidesPerView: 3,
             },
-            1550: {
+            1500: {
                 slidesPerView: 4,
             }
         },
@@ -247,7 +247,7 @@ $(document).ready(function () {
             1200: {
                 slidesPerView: 3,
             },
-            1550: {
+            1500: {
                 slidesPerView: 4,
             }
         },
@@ -276,7 +276,7 @@ $(document).ready(function () {
             1200: {
                 slidesPerView: 3,
             },
-            1550: {
+            1500: {
                 slidesPerView: 4,
             }
         },
@@ -305,7 +305,7 @@ $(document).ready(function () {
             1200: {
                 slidesPerView: 3,
             },
-            1550: {
+            1500: {
                 slidesPerView: 4,
             }
         },
