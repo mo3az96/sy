@@ -2492,10 +2492,6 @@ html[dir=rtl] li.close-btn {
     margin: 0;
     margin-right: 10px;
   }
-  html[dir=rtl] nav .nav-li.xs-li .contact-us i {
-    margin: 0;
-    margin-left: 10px;
-  }
   nav .nav-link {
     color: #242424;
   }
