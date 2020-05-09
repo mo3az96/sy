@@ -77,6 +77,28 @@ $(document).ready(function () {
         autoplay: false,
         loop: true,
     });
+    /////////////////////
+    ///////////////Sliders//////////////////
+    var featuredswiper = new Swiper('.featured-slider .swiper-container', {
+        // effect: 'fade',
+        slidesPerView: 2,
+        spaceBetween: 60,
+        slidesPerGroup: 2,
+        loop: true,
+        pagination: {
+            el: '.featured-slider .swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"> 0' + (index + 1) + '</span>';
+            },
+        },
+        breakpoints: {
+            700: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+        },
+    });
     ///////////////Sliders//////////////////
     var cat1swiper = new Swiper('#cat1 .Product-slider', {
         slidesPerView: 5,

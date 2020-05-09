@@ -791,6 +791,164 @@ html[dir=rtl] .main-slider .shop-now {
   }
 }
 
+.featured-pro {
+  transform: translateY(250px);
+}
+@media (max-width: 767px) {
+  .featured-pro {
+    transform: none;
+  }
+}
+.featured-pro .sec-head {
+  transform: translateY(120px);
+}
+@media (max-width: 767px) {
+  .featured-pro .sec-head {
+    transform: none;
+  }
+}
+
+.featured-slider .swiper-slide:nth-of-type(2n) .featured {
+  transform: translateY(-170px);
+}
+@media (max-width: 767px) {
+  .featured-slider .swiper-slide:nth-of-type(2n) .featured {
+    transform: none;
+  }
+}
+.featured-slider .swiper-slide:nth-of-type(2n) .featured .item-img {
+  width: 370px;
+}
+@media (max-width: 767px) {
+  .featured-slider .swiper-slide:nth-of-type(2n) .featured .item-img {
+    width: 100%;
+  }
+}
+.featured-slider .swiper-slide:nth-of-type(2n) .featured .item-img::before {
+  padding-bottom: 140.540540541%;
+}
+@media (max-width: 767px) {
+  .featured-slider .swiper-slide:nth-of-type(2n) .featured .item-img::before {
+    padding-bottom: 70.1754385965%;
+  }
+}
+.featured-slider .swiper-slide:nth-of-type(2n) .featured .feat-pro-name {
+  position: absolute;
+  bottom: 150px;
+  right: 30px;
+}
+html[dir=rtl] .featured-slider .swiper-slide:nth-of-type(2n) .featured .feat-pro-name {
+  right: auto;
+  left: 30px;
+}
+@media (max-width: 767px) {
+  .featured-slider .swiper-slide:nth-of-type(2n) .featured .feat-pro-name {
+    position: static;
+  }
+}
+.featured-slider .swiper-pagination {
+  bottom: 50px;
+  right: 0;
+}
+html[dir=rtl] .featured-slider .swiper-pagination {
+  right: auto;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .featured-slider .swiper-pagination {
+    right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+.featured-slider .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  font-size: 18px;
+  color: #9fa4af;
+  opacity: 1;
+  box-shadow: none !important;
+  outline: none !important;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.featured-slider .swiper-pagination .swiper-pagination-bullet:hover {
+  color: #000;
+}
+.featured-slider .swiper-pagination .swiper-pagination-bullet::before {
+  content: "/";
+  margin-left: 15px;
+  margin-right: 9px;
+  color: #9fa4af;
+}
+html[dir=rtl] .featured-slider .swiper-pagination .swiper-pagination-bullet::before {
+  margin-left: 9px;
+  margin-right: 15px;
+}
+.featured-slider .swiper-pagination .swiper-pagination-bullet:first-of-type::before {
+  display: none;
+}
+.featured-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  color: #000;
+  pointer-events: none;
+}
+
+.featured {
+  position: relative;
+  padding-top: 170px;
+}
+@media (max-width: 767px) {
+  .featured {
+    padding-top: 25px;
+  }
+}
+.featured .item-img {
+  box-shadow: 0px 37px 103px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.featured .item-img::before {
+  padding-bottom: 70.1754385965%;
+  content: "";
+}
+.featured .item-img img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.featured .feat-pro-name {
+  font-size: 26px;
+  color: #242424;
+  font-family: med;
+  margin-top: 35px;
+  display: inline-flex;
+}
+html[dir=rtl] .featured .feat-pro-name {
+  font-family: ar-med;
+}
+@media (max-width: 767px) {
+  .featured .feat-pro-name {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+  }
+}
+
 .mo-panel {
   max-height: 0;
   overflow: hidden;
@@ -1912,7 +2070,6 @@ html[dir=rtl] .scroll-btn {
 .sec-div {
   background-color: #fbd8e7;
   position: relative;
-  padding-top: 180px;
 }
 .sec-div:after {
   background-color: #f6f3b7;
@@ -1938,12 +2095,13 @@ html[dir=rtl] .sec-div:after {
   position: relative;
   z-index: 1;
   display: flex;
-  margin-bottom: 172px;
+  transform: translateY(180px);
 }
 @media (max-width: 767px) {
   .about-sec {
     flex-direction: column;
     margin-bottom: 50px;
+    transform: none;
   }
 }
 .about-sec .about-title {
