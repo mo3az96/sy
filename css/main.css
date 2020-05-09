@@ -295,10 +295,14 @@ html[dir=rtl] .search-btn {
 html[dir=rtl] .news-input {
   font-family: ar-med;
   text-align: right;
+  font-size: 15px;
 }
 .news-input::placeholder {
   color: #a1a1a1;
   font-size: 11px;
+}
+html[dir=rtl] .news-input::placeholder {
+  font-size: 14px;
 }
 
 .news-button {
@@ -316,6 +320,10 @@ html[dir=rtl] .news-input {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+html[dir=rtl] .news-button {
+  font-family: ar-med;
+  font-size: 14px;
 }
 .news-button:hover {
   background-color: #f6f3b7;
@@ -1179,6 +1187,7 @@ html[dir=rtl] .products .swiper-arrows {
   margin: auto;
   display: block;
   margin-bottom: 33px;
+  background-color: #f5f6f8;
 }
 @media (max-width: 767px) {
   .product .item-img {
@@ -1192,7 +1201,7 @@ html[dir=rtl] .products .swiper-arrows {
   transition: all 0.3s ease-in-out;
 }
 .product .item-img:hover img {
-  transform: scale(1.25);
+  transform: scale(0.9);
 }
 @media (max-width: 767px) {
   .product .item-img:hover img {
@@ -1397,6 +1406,7 @@ html[dir=rtl] .banner .banner-desc {
 }
 html[dir=rtl] .banner .disc-more {
   font-family: ar-bold;
+  font-size: 14px;
 }
 @media (max-width: 767px) {
   .banner .disc-more {
@@ -1983,15 +1993,11 @@ html[dir=rtl] .catalog-link:after {
   transform: rotate(270deg);
   margin-bottom: 19px;
 }
-html[dir=rtl] .contact-us i {
-  transform: none;
-  margin: 0;
-  margin-top: 19px;
-}
 html[dir=rtl] .contact-us {
   left: 0;
   right: auto;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row-reverse;
 }
 @media (max-width: 767px) {
   .contact-us {
@@ -2065,6 +2071,7 @@ html[dir=rtl] .scroll-btn {
   transform: translateY(50%) translateX(50%);
   letter-spacing: 0;
   font-family: ar-med;
+  font-size: 14px;
 }
 
 .sec-div {
