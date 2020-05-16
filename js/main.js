@@ -80,11 +80,10 @@ $(document).ready(function () {
     /////////////////////
     ///////////////Sliders//////////////////
     var featuredswiper = new Swiper('.featured-slider .swiper-container', {
-        // effect: 'fade',
-        slidesPerView: 2,
-        spaceBetween: 60,
-        slidesPerGroup: 2,
-        loop: true,
+        slidesPerView: 1,
+        effect: 'fade',
+
+        // loop: true,
         pagination: {
             el: '.featured-slider .swiper-pagination',
             clickable: true,
@@ -337,6 +336,23 @@ $(document).ready(function () {
     if ($(window).width() <= 767) {
         $(".nav-foot-header").addClass("mo-accordion");
         $(".nav-foot").addClass("mo-panel");
+
+        $(".featured-slider .cont").unwrap()
+        $(".featured-slider .featured").unwrap()
+        $(".featured-slider .featured").wrap("<div class='swiper-slide'></div>")
+        ///////////////Sliders//////////////////
+        var featuredswiper = new Swiper('.featured-slider .swiper-container', {
+            slidesPerView: 1,
+            effect: 'fade',
+            // loop: true,
+            pagination: {
+                el: '.featured-slider .swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"> 0' + (index + 1) + '</span>';
+                },
+            },
+        });
     }
     $('.mo-accordion').click(function () {
         var x = $(this).siblings().prop('scrollHeight') + 12 + "px";
@@ -354,3 +370,4 @@ $(document).ready(function () {
         $(".mo-accordion").not(this).siblings('.nav-foot').css('padding-top', "0");
     })
 });
+
