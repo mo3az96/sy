@@ -896,6 +896,11 @@ html[dir=rtl] .featured-slider .swiper-pagination .swiper-pagination-bullet::bef
   align-items: center;
   width: 570px;
 }
+@media (max-width: 767px) {
+  .featured .item-img {
+    width: 100%;
+  }
+}
 .featured .item-img::before {
   padding-bottom: 70.1754385965%;
   content: "";
