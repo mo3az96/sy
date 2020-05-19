@@ -1221,13 +1221,14 @@ html[dir=rtl] .products .swiper-arrows {
   }
 }
 .product .item-img img {
+  transform: scale(1.05);
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .product .item-img:hover img {
-  transform: scale(0.9);
+  transform: scale(1);
 }
 @media (max-width: 767px) {
   .product .item-img:hover img {
