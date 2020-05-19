@@ -983,6 +983,13 @@ html[dir=rtl] .featured:nth-of-type(2n) .feat-pro-name {
   }
 }
 
+.featured-slider .swiper-slide .featured {
+  opacity: 0;
+}
+.featured-slider .swiper-slide.swiper-slide-active .featured {
+  opacity: 1;
+}
+
 .mo-panel {
   max-height: 0;
   overflow: hidden;
