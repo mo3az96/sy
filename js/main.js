@@ -1,6 +1,6 @@
 $(window).on('load', function () {
     $('.pre-loader').fadeOut("500", function () {
-        $('body').css("overflow", "visible");
+        $('body').removeClass("overflow");
         $(this).remove();
     });
 });
@@ -94,7 +94,6 @@ $(document).ready(function () {
         breakpoints: {
             700: {
                 slidesPerView: 1,
-                slidesPerGroup: 1,
             },
         },
     });
@@ -114,17 +113,20 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            500: {
+            0: {
                 slidesPerView: 1,
             },
-            900: {
+            500: {
                 slidesPerView: 2,
             },
-            1200: {
+            900: {
                 slidesPerView: 3,
             },
-            1500: {
+            1200: {
                 slidesPerView: 4,
+            },
+            1500: {
+                slidesPerView: 5,
             }
         },
     });
@@ -143,17 +145,20 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            500: {
+            0: {
                 slidesPerView: 1,
             },
-            900: {
+            500: {
                 slidesPerView: 2,
             },
-            1200: {
+            900: {
                 slidesPerView: 3,
             },
-            1500: {
+            1200: {
                 slidesPerView: 4,
+            },
+            1500: {
+                slidesPerView: 5,
             }
         },
     });
@@ -172,17 +177,20 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            500: {
+            0: {
                 slidesPerView: 1,
             },
-            900: {
+            500: {
                 slidesPerView: 2,
             },
-            1200: {
+            900: {
                 slidesPerView: 3,
             },
-            1500: {
+            1200: {
                 slidesPerView: 4,
+            },
+            1500: {
+                slidesPerView: 5,
             }
         },
     });
@@ -201,17 +209,20 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            500: {
+            0: {
                 slidesPerView: 1,
             },
-            900: {
+            500: {
                 slidesPerView: 2,
             },
-            1200: {
+            900: {
                 slidesPerView: 3,
             },
-            1500: {
+            1200: {
                 slidesPerView: 4,
+            },
+            1500: {
+                slidesPerView: 5,
             }
         },
     });
@@ -230,17 +241,20 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            500: {
+            0: {
                 slidesPerView: 1,
             },
-            900: {
+            500: {
                 slidesPerView: 2,
             },
-            1200: {
+            900: {
                 slidesPerView: 3,
             },
-            1500: {
+            1200: {
                 slidesPerView: 4,
+            },
+            1500: {
+                slidesPerView: 5,
             }
         },
     });
@@ -259,17 +273,20 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            500: {
+            0: {
                 slidesPerView: 1,
             },
-            900: {
+            500: {
                 slidesPerView: 2,
             },
-            1200: {
+            900: {
                 slidesPerView: 3,
             },
-            1500: {
+            1200: {
                 slidesPerView: 4,
+            },
+            1500: {
+                slidesPerView: 5,
             }
         },
     });
@@ -288,17 +305,20 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            500: {
+            0: {
                 slidesPerView: 1,
             },
-            900: {
+            500: {
                 slidesPerView: 2,
             },
-            1200: {
+            900: {
                 slidesPerView: 3,
             },
-            1500: {
+            1200: {
                 slidesPerView: 4,
+            },
+            1500: {
+                slidesPerView: 5,
             }
         },
     });
@@ -317,17 +337,20 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            500: {
+            0: {
                 slidesPerView: 1,
             },
-            900: {
+            500: {
                 slidesPerView: 2,
             },
-            1200: {
+            900: {
                 slidesPerView: 3,
             },
-            1500: {
+            1200: {
                 slidesPerView: 4,
+            },
+            1500: {
+                slidesPerView: 5,
             }
         },
     });
@@ -369,5 +392,54 @@ $(document).ready(function () {
         $(".mo-accordion").not(this).siblings().css('max-height', '0');
         $(".mo-accordion").not(this).siblings('.nav-foot').css('padding-top', "0");
     })
+
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 15,
+        slidesPerView: 9,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        direction: 'vertical',
+        centeredSlides: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 4,
+                direction: 'horizontal',
+                centeredSlides: false,
+            },
+            768: {
+                slidesPerView: 8,
+                direction: 'horizontal',
+                centeredSlides: false,
+            },
+            900: {
+                slidesPerView: 6,
+            },
+            1200: {
+                slidesPerView: 7,
+            },
+            1450: {
+                slidesPerView: 8,
+            },
+            1800: {
+                slidesPerView: 9,
+            },
+        },
+    });
+
+    /////////////single
+    var galleryTop = new Swiper('.gallery-top', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.gallery-top .swiper-button-next',
+            prevEl: '.gallery-top .swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        },
+    });
+
 });
 
