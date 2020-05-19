@@ -2087,6 +2087,8 @@ html[dir=rtl] .contact-us {
 html[dir=rtl] .social .social-link {
   margin: 0;
   margin-left: 25px;
+  font-family: ar-med;
+  font-size: 14px;
 }
 
 .scroll-btn {
@@ -2810,6 +2812,222 @@ html[dir=rtl] .single-tools .mo-add-to-icon {
 html[dir=rtl] .share-single {
   font-family: ar-med;
   font-size: 14px;
+}
+
+.contact-head {
+  margin-top: 60px;
+}
+.contact-head .place {
+  font-size: 24px;
+  font-family: bold;
+  margin: auto;
+  text-align: center;
+  color: #242424;
+  width: 350px;
+  line-height: 1.167;
+  margin-bottom: 20px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contact-title {
+  width: 59px;
+  font-size: 14px;
+  color: #9fa4af;
+  font-family: bold;
+}
+
+.contact-anchor {
+  font-size: 14px;
+  color: #242424;
+  font-family: bold;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contact-anchor:hover, .contact-anchor:focus {
+  color: #9fa4af;
+}
+
+.contact-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.contact-social .social-link {
+  margin: 0 13px;
+  font-size: 12.5px;
+  color: #9fa4af;
+  font-family: semibold;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contact-social .social-link:hover, .contact-social .social-link:focus {
+  color: #242424;
+}
+html[dir=rtl] .contact-social .social-link {
+  font-family: ar-med;
+  font-size: 14px;
+}
+
+.map-sec {
+  position: relative;
+  padding-top: 94px;
+  padding-bottom: 91px;
+  margin-top: 68px;
+}
+@media (max-width: 767px) {
+  .map-sec {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+  }
+}
+.map-sec .map {
+  height: 700px;
+}
+.map-sec::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f6f3b7;
+  content: "";
+  z-index: -1;
+}
+html[dir=rtl] .map-sec::after {
+  left: 0;
+  right: auto;
+}
+
+.contact-form {
+  margin-top: 75px;
+}
+@media (max-width: 767px) {
+  .contact-form {
+    margin-top: 40px;
+  }
+}
+
+.form-head {
+  text-align: center;
+  font-size: 30px;
+  color: #242424;
+  font-family: bold;
+  margin-bottom: 25px;
+}
+
+.form-desc {
+  font-family: italic;
+  text-align: center;
+  font-size: 15px;
+  color: #898989;
+  width: 550px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .form-desc {
+    width: 100%;
+  }
+}
+
+.input-border {
+  position: relative;
+  margin-top: 40px;
+}
+.input-border .animated-border {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  opacity: 0.5;
+  cursor: text;
+  transition: 0.2s ease all;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: #9fa4af;
+  font-size: 14px;
+}
+.input-border .animated-border:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  height: 1px;
+  width: 10px;
+  visibility: hidden;
+  background-color: #242424;
+  transition: 0.2s ease all;
+}
+.input-border .contact-input {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  color: #242424;
+}
+.input-border .contact-input::placeholder {
+  font-size: 14px;
+  color: #9fa4af;
+}
+.input-border .contact-input:focus ~ .animated-border {
+  opacity: 1;
+}
+.input-border .contact-input:focus ~ .animated-border:after {
+  visibility: visible;
+  width: 100%;
+  left: 0;
+}
+.input-border .contact-area {
+  height: 130px;
+  resize: none;
+}
+.input-border .contact-area ~ .animated-border:after {
+  bottom: 5px;
+  transition: 0.4s ease all;
+}
+
+.submit-btn {
+  width: 190px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  background-color: #fbd8e7;
+  border-radius: 25px;
+  margin-top: 75px;
+  color: #242424;
+  font-size: 14px;
+  font-family: bold;
+  transition: 0.3s ease all;
+}
+.submit-btn:hover {
+  background-color: #f6f3b7;
+}
+@media (max-width: 767px) {
+  .submit-btn {
+    margin-top: 40px;
+  }
 }
 
 footer {
