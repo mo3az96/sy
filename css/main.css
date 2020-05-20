@@ -2827,6 +2827,9 @@ html[dir=rtl] .share-single {
   line-height: 1.167;
   margin-bottom: 20px;
 }
+html[dir=rtl] .contact-head .place {
+  font-family: ar-bold;
+}
 
 .contact-method {
   display: flex;
@@ -2841,6 +2844,9 @@ html[dir=rtl] .share-single {
   color: #9fa4af;
   font-family: bold;
 }
+html[dir=rtl] .contact-title {
+  font-family: ar-bold;
+}
 
 .contact-anchor {
   font-size: 14px;
@@ -2853,6 +2859,9 @@ html[dir=rtl] .share-single {
 }
 .contact-anchor:hover, .contact-anchor:focus {
   color: #9fa4af;
+}
+html[dir=rtl] .contact-anchor {
+  font-family: ar-bold;
 }
 
 .contact-social {
@@ -2929,6 +2938,9 @@ html[dir=rtl] .map-sec::after {
   font-family: bold;
   margin-bottom: 25px;
 }
+html[dir=rtl] .form-head {
+  font-family: ar-bold;
+}
 
 .form-desc {
   font-family: italic;
@@ -2943,6 +2955,10 @@ html[dir=rtl] .map-sec::after {
   .form-desc {
     width: 100%;
   }
+}
+html[dir=rtl] .form-desc {
+  font-family: ar-reg;
+  font-style: italic;
 }
 
 .input-border {
@@ -3028,6 +3044,9 @@ html[dir=rtl] .map-sec::after {
   .submit-btn {
     margin-top: 40px;
   }
+}
+html[dir=rtl] .submit-btn {
+  font-family: ar-bold;
 }
 
 footer {
